@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CreatingDesignableUserInterface" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biL-P6-PFV" customClass="CustomView" customModule="CreatingDesignableUserInterface" customModuleProvider="target">
-                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <rect key="frame" x="20" y="40" width="280" height="420"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="X3z-jf-PF9">
-                                        <rect key="frame" x="67.5" y="32" width="200" height="326"/>
+                                        <rect key="frame" x="40" y="16" width="200" height="326"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="mmo-VT-l2r" customClass="DesignableImageView" customModule="CreatingDesignableUserInterface" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -95,12 +95,19 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="YBo-10-bzZ" firstAttribute="width" secondItem="zi0-Bt-G9K" secondAttribute="width" id="dw0-Wp-Sa5"/>
+                                            <constraint firstItem="0vx-wO-5lI" firstAttribute="width" secondItem="zi0-Bt-G9K" secondAttribute="width" id="xan-9l-roe"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="X3z-jf-PF9" firstAttribute="centerX" secondItem="biL-P6-PFV" secondAttribute="centerX" id="KQ7-fA-b0h"/>
-                                    <constraint firstItem="X3z-jf-PF9" firstAttribute="top" secondItem="biL-P6-PFV" secondAttribute="top" constant="32" id="T3S-Dz-Gef"/>
+                                    <constraint firstItem="X3z-jf-PF9" firstAttribute="top" secondItem="biL-P6-PFV" secondAttribute="top" constant="16" id="10n-HE-1zU"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X3z-jf-PF9" secondAttribute="trailing" id="kFg-i0-e1T"/>
+                                    <constraint firstItem="X3z-jf-PF9" firstAttribute="centerX" secondItem="biL-P6-PFV" secondAttribute="centerX" id="lR7-h3-1qs"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="X3z-jf-PF9" secondAttribute="bottom" id="vF8-q1-mPg"/>
+                                    <constraint firstItem="X3z-jf-PF9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="biL-P6-PFV" secondAttribute="leading" id="xK8-YT-5Og"/>
                                 </constraints>
                             </view>
                         </subviews>
